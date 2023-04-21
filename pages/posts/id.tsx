@@ -2,7 +2,7 @@ import { getAllPostIds, getPostData } from '@/lib/posts'
 import { GetStaticPaths, GetStaticProps } from 'next'
 import Head from 'next/head'
 import React from 'react'
-import homestyles from '../styles/Home.module.css'
+import homestyles from '../../styles/Home.module.css'
 
 export default function post({postData}:{
   postData : {
@@ -28,7 +28,7 @@ export default function post({postData}:{
 }
 
 export const getStaticPaths:GetStaticPaths = async() => {
-  const paths = getAllPostIds()
+  const paths = getAllPostIds();
   console.log('paths',paths)
   return {
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Footer = () => {
+function Footer() {
   return (
-    <div>copyright. All rights reserved.</div>
+    <div>copyright. all right reserved.</div>
   )
 }
 
